@@ -14,14 +14,14 @@ public class Aluno {
     private String nome;
     private String cpf;
     private int matricula;
-    private int idade;
+    private LocalDate dataNascimento;
     private double notas[];
     
     public Aluno(){
         this.nome = "";
         this.cpf = "00.000.000-00";
         this.matricula = 0;
-        this.idade = 0;
+        //this.dataNascimento = 0;
         this.notas = new double [4];
     }
     
@@ -64,14 +64,6 @@ public class Aluno {
 
     public void setMatricula(int matricula) {
         this.matricula = matricula;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
     }
 
     public double[] getNotas() {

@@ -5,6 +5,8 @@
  */
 package exercicioaluno;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Ricardo Trintin
@@ -15,7 +17,18 @@ public class ExercicioAluno {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        
+        Aluno aluno = new Aluno();
+        Scanner read = new Scanner(System.in);
+        
+        
+        System.out.println("1 - criar turma");
+        System.out.println("2 - sair");
+        System.out.println("");
+        System.out.println("Escolha uma das opçoes");
+        read.nextInt();
+        
+        
     }
     
 }

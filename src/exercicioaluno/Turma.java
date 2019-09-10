@@ -11,6 +11,8 @@ package exercicioaluno;
  */
 public class Turma {
     
+    Aluno aluno = new Aluno();
+    
     
     
 }
