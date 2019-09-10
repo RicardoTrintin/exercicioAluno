@@ -18,16 +18,30 @@ public class ExercicioAluno {
      */
     public static void main(String[] args) {
         
+        
         Aluno aluno = new Aluno();
         Scanner read = new Scanner(System.in);
+        int menu = 0;
+        String nomeTurma = "";
+        int qtdTurma = 0;
         
         
         System.out.println("1 - criar turma");
         System.out.println("2 - sair");
         System.out.println("");
         System.out.println("Escolha uma das opçoes");
-        read.nextInt();
+        menu = read.nextInt();
         
+        if (menu == 1){
+            System.out.print("Digite o nome da turma: ");
+            nomeTurma = read.next();
+            System.out.print("Quantos alunos existitiram nesta turma: ");
+            qtdTurma = read.nextInt();
+            
+            Turma turma = new Turma(qtdTurma, nomeTurma);
+        }else {
+            System.exit(0);
+        }
         
     }
     

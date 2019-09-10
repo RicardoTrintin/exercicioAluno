@@ -11,8 +11,18 @@ package exercicioaluno;
  */
 public class Turma {
     
-    Aluno aluno = new Aluno();
+    private int qtdAluno;
+    private String nome;
     
+    public Turma(){
+        qtdAluno = 0;
+        nome = "";
+    }
+    
+    public Turma(int qtd, String nome){
+        this.qtdAluno = qtd;
+        this.nome = nome;
+    }
     
     
 }
