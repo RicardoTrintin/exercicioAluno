@@ -5,6 +5,7 @@
  */
 package exercicioaluno;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -18,8 +19,10 @@ public class ExercicioAluno {
      */
     public static void main(String[] args) {
         
+        ArrayList<NotaAluno>teste = new ArrayList();
         
-        Aluno aluno = new Aluno();
+        //teste.add(1, 01, 10);
+        
         Scanner read = new Scanner(System.in);
         int menu = 0;
         String nomeTurma = "";

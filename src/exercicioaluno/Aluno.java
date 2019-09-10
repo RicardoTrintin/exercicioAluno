@@ -5,6 +5,8 @@
  */
 package exercicioaluno;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Ricardo Trintin
@@ -15,31 +17,13 @@ public class Aluno {
     private String cpf;
     private int matricula;
     private LocalDate dataNascimento;
-    private double notas[];
+    private ArrayList<NotaAluno>notas;
     
-    public Aluno(){
+    public Aluno(ArrayList notas){
         this.nome = "";
         this.cpf = "00.000.000-00";
         this.matricula = 0;
-        //this.dataNascimento = 0;
-        this.notas = new double [4];
-    }
-    
-    
-    public void alteraNome(String nome){
-        this.nome = nome;
-    }
-    
-    //Function média 
-    public double media(){
-        double soma = 0;
-        
-        for(double nota: this.notas){
-            soma += nota;
-        }
-        double media = soma / this.notas.length;
-        
-        return media;
+        this.notas = notas;
     }
 
     public String getNome() {
@@ -66,13 +50,24 @@ public class Aluno {
         this.matricula = matricula;
     }
 
-    public double[] getNotas() {
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(LocalDate dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
+    public ArrayList<NotaAluno> getNotas() {
         return notas;
     }
 
-    public void setNotas(double[] notas) {
+    public void setNotas(ArrayList<NotaAluno> notas) {
         this.notas = notas;
     }
+    
+    
+   
     
     
     
